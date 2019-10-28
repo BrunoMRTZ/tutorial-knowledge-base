@@ -1,0 +1,13 @@
+Grupo,Família,Tipo,Objeto
+Produtos,Aerograma,Aerograma-Social,Aerograma-Social
+Produtos,AR,Convencional,Aviso-de-Recebimento-Convencional
+Produtos,AR,Digital,Aviso-de-Recebimento-Digital
+infraestrutura,aplicativos,Aplicativos-Correios,Aplicativos-Correios
+Produtos,AR,Digital,AR-digital
+Produtos,AR,Convencional,AR-convencional
+Financeiro,Bancário,Aporte-e-Saque,Aporte-e-Saque
+Telefonia,Atendimento,presencial,Atendimento-Presencial–Telefónica
+Entrega,restrições,Domiciliar,áreas-com-restrição-de-entrega-domiciliar
+Postagem,Postagem,Postagem,Postagem
+Serviço,Achados-e-Perdidos,Achados-e-Perdidos,Achados-e-Perdidos
+Terceiros,Terceiros,Terceiros,Terceiros
