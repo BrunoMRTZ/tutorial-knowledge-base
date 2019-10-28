@@ -1,3 +1,4 @@
+#encoding: utf-8
 from grakn.client import GraknClient
 import csv
 
