@@ -16,10 +16,11 @@ def load_data_into_grakn(input, session):
     for item in items:
         with session.transaction().write() as transaction:
             graql_insert_query = input["template"](item)
+            print("Executing Graql Query: " + graql_insert_query)
             transaction.query(graql_insert_query)
             transaction.commit()
 
-    print("Inserted {str(len(items))} items from [{input['data_path']}] into Grakn.")
+    print("\nInserted {str(len(items))} items from [{input['data_path']}] into Grakn.\n")
 
 
 def assunto_template(assunto):
