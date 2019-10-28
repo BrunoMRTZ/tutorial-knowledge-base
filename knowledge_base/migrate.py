@@ -19,7 +19,7 @@ def load_data_into_grakn(input, session):
             transaction.query(graql_insert_query)
             transaction.commit()
 
-    print(f"Inserted {str(len(items))} items from [{input['data_path']}] into Grakn.")
+    print("Inserted {str(len(items))} items from [{input['data_path']}] into Grakn.")
 
 
 def bank_template(bank):
