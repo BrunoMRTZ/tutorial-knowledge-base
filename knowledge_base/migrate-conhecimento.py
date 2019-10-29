@@ -22,14 +22,15 @@ def load_data_into_grakn(input, session):
             transaction.commit()
             print("\nInserted {str(len(items))} items from [{input['data_path']}] into Grakn.\n")
 
-
-def base_template(base):
-    graql_insert_query = "insert $base isa base"
-    graql_insert_query += ', has serviço "' + base["serviço"] + '"'
-    graql_insert_query += ', has pergunta "' + base["pergunta"] + '"'
-    graql_insert_query += ', has resposta "' + base["resposta"] + '"'
-    graql_insert_query += ";"
+def conhecimento_template(conhecimento):
+    # match assunto
+    graql_insert_query = 'match $relativo isa assunto, has objeto "' + conhecimento["objeto_id"] + '";'
+    # match base
+    graql_insert_query += ' $origina isa base, has servico "' + conhecimento["servico_id"] + '";'
+    # insert conhecimento
+    graql_insert_query += " insert $conhecimento(origina: $origina, relativo: $relativo) isa conhecimento;"
     return graql_insert_query
+
 
 
 def parse_data_to_dictionaries(input):
@@ -43,7 +44,7 @@ def parse_data_to_dictionaries(input):
 
 if __name__ == "__main__":
     inputs = [
-        {"data_path": "./knowledge_base/data/base", "template": base_template},
+        {"data_path": "./knowledge_base/data/base", "template": conhecimento_template},
             ]
 
     build_base_graph(inputs)
