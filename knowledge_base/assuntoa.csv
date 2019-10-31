@@ -11,3 +11,9 @@ física,Entrega,restrições,Domiciliar,áreas-com-restrição-de-entrega-domici
 física,Postagem,Postagem,Postagem,Postagem
 física,Serviço,Achados-e-Perdidos,Achados-e-Perdidos,Achados-e-Perdidos
 física,Terceiros,Terceiros,Terceiros,Terceiros
+física,Financeiro,bancário,Banco Postal,Benefício-INSS
+física,Financeiro,bancário,Banco Postal,Empréstimos
+física,Financeiro,bancário,Banco Postal,Recebimento-de-Contas
+física,informação,marketing,mídias sociais,Blog dos Correios
+física,informação,marketing,institucional,Busca Agências
+física,informação,marketing,institucional,Busca CEP
