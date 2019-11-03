@@ -1,0 +1,19 @@
+pessoaFJ,grupo,familia,tipo,objeto
+física,Produtos,Aerograma,Aerograma-Social,Aerograma-Social
+física,Produtos,AR,Convencional,Aviso-de-Recebimento-Convencional
+física,Produtos,AR,Digital,Aviso-de-Recebimento-Digital
+física,infraestrutura,aplicativos,Aplicativos-Correios,Aplicativos-Correios
+física,Produtos,AR,Digital,AR-digital
+física,Produtos,AR,Convencional,AR-convencional
+física,Financeiro,Bancário,Aporte-e-Saque,Aporte-e-Saque
+física,Telefonia,Atendimento,presencial,Atendimento-Presencial–Telefónica
+física,Entrega,restrições,Domiciliar,áreas-com-restrição-de-entrega-domiciliar
+física,Postagem,Postagem,Postagem,Postagem
+física,Serviço,Achados-e-Perdidos,Achados-e-Perdidos,Achados-e-Perdidos
+física,Terceiros,Terceiros,Terceiros,Terceiros
+física,Financeiro,bancário,Banco Postal,Benefício-INSS
+física,Financeiro,bancário,Banco Postal,Empréstimos
+física,Financeiro,bancário,Banco Postal,Recebimento-de-Contas
+física,informação,marketing,mídias sociais,Blog dos Correios
+física,informação,marketing,institucional,Busca Agências
+física,informação,marketing,institucional,Busca CEP
