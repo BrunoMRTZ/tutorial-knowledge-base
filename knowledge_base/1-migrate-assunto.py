@@ -28,7 +28,7 @@ def assunto_template(assunto):
     graql_insert_query = "insert $assunto isa assunto"
     graql_insert_query += ', has pessoaFJ "' + assunto["pessoaFJ"] + '"'
     graql_insert_query += ', has grupo "' + assunto["grupo"] + '"'
-    graql_insert_query += ', has família "' + assunto["família"] + '"'
+    graql_insert_query += ', has familia "' + assunto["familia"] + '"'
     graql_insert_query += ', has tipo "' + assunto["tipo"] + '"'
     graql_insert_query += ', has objeto "' + assunto["objeto"] + '"'
     graql_insert_query += ";"
