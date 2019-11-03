@@ -25,7 +25,7 @@ def load_data_into_grakn(input, session):
 
 def base_template(base):
     graql_insert_query = "insert $base isa base"
-    graql_insert_query += ', has serviço "' + base["serviço"] + '"'
+    graql_insert_query += ', has servico "' + base["servico"] + '"'
     graql_insert_query += ', has pergunta "' + base["pergunta"] + '"'
     graql_insert_query += ', has resposta "' + base["resposta"] + '"'
     graql_insert_query += ";"
