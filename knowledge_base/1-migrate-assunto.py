@@ -46,7 +46,7 @@ def parse_data_to_dictionaries(input):
 
 if __name__ == "__main__":
     inputs = [
-        {"data_path": "./knowledge_base/data/assunto", "template": assunto_template},
+        {"data_path": "./data/assunto", "template": assunto_template},
             ]
 
     build_assunto_graph(inputs)
