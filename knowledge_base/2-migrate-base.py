@@ -43,7 +43,7 @@ def parse_data_to_dictionaries(input):
 
 if __name__ == "__main__":
     inputs = [
-        {"data_path": "./knowledge_base/data/base", "template": base_template},
+        {"data_path": "./data/base", "template": base_template},
             ]
 
     build_base_graph(inputs)
