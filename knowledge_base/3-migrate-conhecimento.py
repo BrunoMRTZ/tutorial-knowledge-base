@@ -5,7 +5,7 @@ import csv
 
 def build_base_graph(inputs):
         with GraknClient(uri="localhost:48555") as client:
-            with client.session(keyspace="baseconhecimento") as session:
+            with client.session(keyspace="base_conhecimento") as session:
                 for input in inputs:
                     print("Loading from [" + input["data_path"] + "] into Grakn ...")
                     load_data_into_grakn(input, session)
