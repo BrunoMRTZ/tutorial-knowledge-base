@@ -8,7 +8,7 @@ define
     plays relativo,
     has pessoaFJ,
     has grupo,
-    has família,
+    has familia,
     has tipo,
     has objeto;
 
