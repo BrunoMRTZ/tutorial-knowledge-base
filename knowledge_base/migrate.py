@@ -171,31 +171,31 @@ def parse_data_to_dictionaries(input):
 
 if __name__ == "__main__":
     inputs = [
-        {"data_path": "./knowledge_base/data/person", "template": person_template},
-        {"data_path": "./knowledge_base/data/account", "template": account_template},
-        {"data_path": "./knowledge_base/data/bank", "template": bank_template},
-        {"data_path": "./knowledge_base/data/card", "template": card_template},
+        {"data_path": "./data/person", "template": person_template},
+        {"data_path": "./data/account", "template": account_template},
+        {"data_path": "./data/bank", "template": bank_template},
+        {"data_path": "./data/card", "template": card_template},
         {
-            "data_path": "./knowledge_base/data/attribute_mapping",
+            "data_path": "./data/attribute_mapping",
             "template": attribute_mapping_template,
         },
         {
-            "data_path": "./knowledge_base/data/mention_mapping",
+            "data_path": "./data/mention_mapping",
             "template": mention_mapping_template,
         },
         {
-            "data_path": "./knowledge_base/data/entity_type_mapping",
+            "data_path": "./data/entity_type_mapping",
             "template": entity_type_mapping_template,
         },
         {
-            "data_path": "./knowledge_base/data/represented-by",
+            "data_path": "./data/represented-by",
             "template": represented_by_template,
         },
         {
-            "data_path": "./knowledge_base/data/transaction",
+            "data_path": "./data/transaction",
             "template": transaction_template,
         },
-        {"data_path": "./knowledge_base/data/contract", "template": contract_template},
+        {"data_path": "./data/contract", "template": contract_template},
     ]
 
     build_banking_graph(inputs)
