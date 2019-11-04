@@ -19,6 +19,8 @@ define
     has resposta;
     
 
+  servico sub attribute,
+	  datatype string;
   grupo sub attribute,
 	  datatype string;
   família sub attribute,
