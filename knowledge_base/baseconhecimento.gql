@@ -14,7 +14,7 @@ define
 
   base sub entity,
     plays origina,
-    has servico;
+    has servico,
     has pergunta,
     has resposta;
     
