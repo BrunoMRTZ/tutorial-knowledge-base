@@ -24,9 +24,9 @@ def load_data_into_grakn(input, session):
 
 def conhecimento_template(conhecimento):
     # match assunto
-    graql_insert_query = 'match $relativo isa assunto, has objeto "' + conhecimento["objeto_id"] + '";'
+    graql_insert_query = 'match $relativo isa assunto, has objeto "' + conhecimento["conhecimento"] + '";'
     # match base
-    graql_insert_query += ' $origina isa base, has servico "' + conhecimento["servico_id"] + '";'
+    graql_insert_query += ' $origina isa base, has servico "' + conhecimento["conhecimento"] + '";'
     # insert conhecimento
     graql_insert_query += " insert $conhecimento(origina: $origina, relativo: $relativo) isa conhecimento;"
     return graql_insert_query
