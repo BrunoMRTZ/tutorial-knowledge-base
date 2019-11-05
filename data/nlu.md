@@ -207,71 +207,47 @@
 - qual é o [headquarters](attribute) da [first](mention) opção?
 
 ## intent:query_entities
-- qual são as opções do [banks](entity_type)?
+- você pode listar todos as [people](entity_type)?
+- what are my [banking](entity_type) options?>
+- what are my [banking](entity_type) options?
 - me mostre todas os [banks](entity_type)
 - liste todos os [banks](entity_type)
 - liste os [banks](entity_type)
 - quais são as opções dos meus [banks](entity_type)?
 - Liste todos os [banks](entity_type) da [Germany](country)
 - você pode listar todos os [banks](entity_type) localizados na [Germany](country)?
-- você pode listar todos as [people](entity_type)?
+- quais [banks](entity_type) você recomenda
+- quais [banks](entity_type) você trabalha
+- quais são as opções do [bank](entity_type)?
+- quero saber a diferença entre as opções do [banking](entity_type)
 - quais [accounts](entity_type) existem?
 - quais [accounts](entity_type) você tem?
+- quais [accounts](entity_type) tenho no [bank](entity_type)
+- liste minhas [accounts](entity_type)
+- me fale sobre [accounts](entity_type)
+- quais são minhas [accounts](entity_type)
+- quais são os [accounts](entity_type) que eu tenho?
+- me fale sobre minhas [accounts](entity_type)
+- quais minhas [transactions](entity_type) na [first](mention) opção
+- quais tipo [accounts](entity_type) eu tenho?
+- Detalhes da [accounts](entity_type)
+- [Accounts](entity_type)
+- quais são minhas [accounts](entity_type)?
 - por favor, liste todos os [accounts](entity_type)?
 - quais [transactions](entity_type) existem na minha conta [DE89370400440532013000](account)
 - Liste todas as [transactions](entity_type)
-- quais são minhas [accounts](entity_type)?
 - quais são minhas  últimas [transactions](entity_type)?
 - Liste todas as [transactions](entity_type) da minha conta
 - alguma de minhas [transactions](entity_type) estão relacionadas com  [food](category)
-- quais [accounts](entity_type) do i have with that [bank](entity_type)
-- list all [banks](entity_type)
-- quais são as opções do [bank](entity_type)
-- quais são minhas [accounts](entity_type)
-- liste minhas [accounts](entity_type)
-- quais são as opções do [bank](entity_type)?
+- quais são minhas [transactions](entity_type) na conta [DE76894768662419673111](account)
+- liste as [transactions](entity_type) da [second](mention) opção
+- você pode listar as [transaction](entity_type) da [food](category)
+- quais [transactions](entity_type) eu fiz com [food](category)
+- quais são as [transactions](entity_type) da minha conta [DE76894768662419673111](account)
+- você pode listar os últimos [transactions](entity_type)
+- [how much](attribute) gastei em [food](category)
 - quais [cards](entity_type) eu tenho?
-- me fale sobre [accounts](entity_type)
-- quero saber a diferença entre as opções do [banking](entity_type)
-- quais são os [accounts](entity_type) que eu tenho?
-- tell me about my [accounts](entity_type)
-- what [banks](entity_type) do you have?
-- What [bank](entity_type) options do I have?
-- What [banking](entity_type) options do I have?
-- what are my [accounts](entity_type)
-- can you list may [cards](entity_type)
-- what [cards](entity_type) do i have
-- can you list my [transactions](entity_type)
-- what are my recent [transactions](entity_type) on [DE76894768662419673111](account)
-- can you list some [banks](entity_type) for me
-- what are my [bank](entity_type) options
-- can you list some [transactions](entity_type) of the [second](mention) one
-- what are my [transactions](entity_type) on [DE82444435329779109646](account)
-- what are my recent [transaction](entity_type) on [food](category)
-- i want to check on my [accounts](entity_type)
-- what are my [banking](entity_type) options?>
-- what are my [banking](entity_type) options?
-- What are my [accounts](entity_type)?
-- What [accounts](entity_type) do I have?
-- what are my recent [transactions](entity_type) on the [first](mention) one
-- which [accounts](entity_type) do I have?
-- Details about [accounts](entity_type)
-- [Accounts](entity_type)
-- can you list my [accoutns](entity_type)
-- what  are my recent [transactions](entity_type) on that account
-- list my [accounts](entity_type)
-- what [accounts](entity_type) do i owe
-- can you list [transactions](entity_type) for the [second](mention) one
-- can you list my [transaction](entity_type) on [food](category)
-- [how much](attribute) did i spend on [food](category)
-- what are my [transactions](entity_type) on that account
-- how much [money](attribute) did i spent on [food](category)
-- what are [transactions](entity_type) I made on [food](category)
-- and what are [transactions](entity_type) from my account [DE76894768662419673111](account)
-- can you only show me [transactions](entity_type) from my account [DE70334119137743514093](account)
-- voc^çe pode listar os últimos [transactions](entity_type)
-- qual [banks](entity_type) você recomenda
-- quais [banks](entity_type) você trabalha
+- voçê pode listar meus [cards](entity_type)
 
 ## intent:resolve_entity
 - [1](mention)
