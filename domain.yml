@@ -9,6 +9,7 @@ intents:
 - query_attribute
 - query_entities
 - resolve_entity
+- pesquisa_correiosaz
 entities:
 - account
 - account_type
@@ -28,7 +29,10 @@ entities:
 - phone_number
 - reference
 - transaction
+- correiosaz
 slots:
+  correiosaz:
+    type: text
   account:
     type: text
   account_number:
@@ -99,27 +103,28 @@ slots:
     type: text
 templates:
   utter_greet:
-  - text: Hi. I can give you some information about banks or I can give you some details
-      about the accounts you own. What do you want to know?
+  - text: Olá. Posso fornecer informações sobre os Correios, bancos ou detalhes sobre as contas correntes que você possui. Quais informações você deseja?
   utter_goodbye:
-  - text: Talk to you later!
-  - text: Bye.
+  - text: Até a próxima!👋
+  - text: Tchau, até logo.👋
+  - text: Foi um prazer conversar com você.
   utter_ok:
-  - text: Ok
+  - text: Ok!👍
   utter_rephrase:
-  - text: Can you please rephrase?
-  - text: Sorry, I didn't get that. Can you rephrase?
+  - text: Poderia refazer a pergunta com outras palavras? 🤔
+  - text: Desculpe, não consegui captar sua intenção. Poderia refazer o pedido?
   utter_out_of_scope:
-  - text: Sorry, I cannot help you with that.
-  - text: I'm not able to help you with that.
+  - text: Desculpe, Não consigo responder sobre este assunto.😢
+  - text: Não consigo te ajudar neste assunto?.😢
   utter_help:
-  - text: I can tell you some facts about different banks. I can answer some questions
-      about your accounts. And I can show you your recent transactions.
+  - text: Consigo enviar alguns fatos sobre diferentes bancos. Posso responder sobre algumas questionamentos da suas contas correntes.
+       Posso listar as suas últimas transações.
 actions:
 - action_compare_entities
 - action_query_attribute
 - action_query_entities
 - action_resolve_entity
+- action_resolve_correios
 - utter_goodbye
 - utter_greet
 - utter_help
