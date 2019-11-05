@@ -15,23 +15,23 @@ class KnowledgeBase(object):
         limit: int = 5,
     ) -> List[Dict[Text, Any]]:
 
-        raise NotImplementedError("Method is not implemented.")
+        raise NotImplementedError("Método não implementado.")
 
     def get_attribute_of(
         self, entity_type: Text, key_attribute: Text, entity: Text, attribute: Text
     ) -> List[Any]:
 
-        raise NotImplementedError("Method is not implemented.")
+        raise NotImplementedError("Método não implementado.")
 
     def validate_entity(
         self, entity_type, entity, key_attribute, attributes
     ) -> Optional[Dict[Text, Any]]:
 
-        raise NotImplementedError("Method is not implemented.")
+        raise NotImplementedError("Método não implementado.")
 
     def map(self, mapping_type: Text, mapping_key: Text) -> Text:
 
-        raise NotImplementedError("Method is not implemented.")
+        raise NotImplementedError("Método não implementado.")
 
 
 class GraphDatabase(KnowledgeBase):
