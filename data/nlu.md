@@ -1,133 +1,57 @@
 ## intent:affirm
-- yes
-- of course
-- sure
-- yeah
+- sim
+- claro
+- afirmativo
+- é isso mesmo
 - ok
-- cool
-- go for it
-- yep
-- yep, will do thank you
-- I'm sure I will!
-- oh awesome!
-- Yes
-- accept
-- I accept
-- i accept
-- ok i accept
-- I changed my mind. I want to accept it
-- ok cool
-- alright
-- i will!
-- ok, I behave now
-- yop
-- oki doki
-- yes please
-- yes please!
-- jo
-- yep if i have to
-- amayzing
-- confirm
-- nice
-- coolio
-- definitely yes without a doubt
-- yas
-- yup
-- perfect
-- sure thing
-- absolutely
-- Oh, ok
-- Sure
-- hm, i'd like that
-- ja
-- sure!
-- yes i accept
-- Sweet
-- amazing!
-- how nice!
-- cool!
-- yay
-- yes accept please
-- great
-- oh cool
-- yes
-- fine
+- massa
+- vai enfrente
+- entendido
+- fantástico
+- aceito
+- eu aceito
+- ok aceito
+- certo
+- tudo ok
+- tudo certo
+- maravilha
+- é isso aí
+- por favor
+- entendi
+- confirmado
+- perfeito
 
 ## intent:bye
-- goodbye
-- goodnight
-- good bye
-- good night
-- see ya
-- toodle-oo
-- bye bye
-- gotta go
-- farewell
-- catch you later
-- bye for now
-- bye
-- bye was nice talking to you
-- bye udo
-- bye bye bot
-- bye bot
-- k byyye #slay
-- tlak to you later
-- ciao
-- Bye bye
-- then bye
-- tschüssikowski
-- bye!
+- tchau
+- até logo
+- até mais
 
 ## intent:compare_entities
-- On which of those accounts do I currently have more [money](attribute)?
-- Where do I have more [money](attribute)?
-- Which one has more [cash](attribute) on it?
-- Which is the one with more [money](attribute)?
-- How much [money](attribute) do I have on those accounts?
-- on which account do i have more [money](attribute)
-- on which of those do i have more [money](attribute)?
-- how much [money](attribute) do i have on them?
-- what is my [balance](attribute) on those?
-- what about the [balance](attribute) on those accounts
+- que contas tem mais [money](attribute)?
+- em quais contas eu tenho mais [money](attribute)?
+- onde tenho mais [money](attribute)?
+- qual tem mais [cash](attribute)?
+- qual tem o maior [cash](attribute)?
+- em qual conta tem mais [cash](attribute)?
+- em qual conta tem o maior [cash](attribute)?
+- quanto [money](attribute) tem nesta conta?
+- em qual conta eu tenho mais [cash](attribute)?
+- qual é meu [balance](attribute) nesta conta?
+- qual é meu [balance](attribute)?
+- liste o [balance](attribute) desta conta?
+- mostre o [balance](attribute) da conta?
+
 
 ## intent:deny
-- no
-- definitely not
-- never
-- absolutely not
-- i don't think so
-- i'm afraid not
-- no sir
-- no ma'am
-- no way
-- no sorry
-- No, not really.
-- nah not for me
-- nah
-- no and no again
-- no go
-- no thanks
-- decline
-- deny
-- i decline
-- never mind
-- I'm not giving you my email address
-- no I haven't decided yet if I want to sign up
-- I don't want to give it to you
-- I'm not going to give it to you
-- no i don't accept
-- no!!!!
-- no you did it wrong
-- no i can't
-- i'm not sure
-- NEIN
-- nein
-- not really
-- i guess it means - no
-- i don't want to
-- i don't want either of those
-- nah thanks
-- neither of these
+- não
+- definitavemente não
+- nunca 
+- nem pensar
+- aho que não
+- não tenho certeza
+- não senhora
+- não, obrigado
+- negativo
 
 ## intent:greet
 - Hi
@@ -201,118 +125,115 @@
 - Hello?
 
 ## intent:help
-- What can you do?
-- What should I ask you?
-- how can you help me
-- I need help
-- help me
-- I'm stuck
-- i need help
-- i don't know what to do
+- Preciso de ajuda
+- quais são as opções
+- Como você pode me ajudar
+- Preciso de ajuda
+- me ajude
+- help
+- me de um help
+- não sei o que eu quero
 
 ## intent:out_of_scope
-- Can I transfer money?
-- Can I open a bank [account](entity_type)?
-- Can you help me with transferring money?
-- I want to open a bank [account](entity_type)
-- I need a new bank [account](entity_type)
-- i want to transfer money
-- I want to transfer money
-- can you name the [owner](attribute) of the [account](entity_type) [DE76894768662419673111](account)
-- do i also have an account on [N26](bank)
-- What are [transactions](entity_type) I made to account [DE51728838437501118370](account)
+- posso transferir dinheiro?
+- posso fazer transferência
+- transferência
+- posso abrir uma [account](entity_type)?
+- abrir uma [account](entity_type)?
+- pode me ajudar com transferência?
+- eu quero abrir uma [account](entity_type) no banco
+- preciso de uma nova [account](entity_type)
+- quero transferir dinheiro
+- você pode me informar o [owner](attribute) da [account](entity_type) [DE76894768662419673111](account)
+- tenho uma conta no [N26](bank)
+- quais são as [transactions](entity_type) que realizei na conta [DE51728838437501118370](account)
 
 ## intent:query_attribute
-- What is the [gender](attribute) of [Hans Maier](person)?
-- What is the [email](attribute) of [Jannik Jung](person)?
-- In what [city](attribute) does [christa schulz](person) live?
-- In what [city](attribute) is [N26](bank) located?
-- Has [Wirecard Bank](bank) an [english website](attribute)?
-- Does the [first](mention) offer [free accounts](attribute)?
-- What kind of [residents](attribute) can open an account at [DKB](bank)?
-- Does [N26] allow [free worldwide withdrawals](attribute)?
-- Where is the [headquarter](attribute) of [Deutsche Bank](bank)?
-- Does the [Deutsche Bank](attribute) have an [english customer service](attribute)?
-- Can you tell me if [KfW](bank) offers [free worldwide withdrawals](attribute)?
-- What is the [city](attribute) of the [second](mention) one?
-- What is the [gender](attribute) of the [last](mention) one?
-- How much [money](attribute) did I spend on [food](category)?
-- [How much](attribute) did I spent on [cloth](category)?
-- What did I [pay](attribute) for [food](category)
-- [How much](attribute) did I spent on [traveling](category)?
-- How much [money](attribute) do I have on that account?
-- What is my [balance](attribute) on that account?
-- what is my [balance](attribute)
-- how much [money](attribute) do i have on that [account](entity_type)
-- What is the [headquarter](attribute) of the [forth](mention) one?
-- What is the [headquarters](attribute) of [Comdirect](bank)?
-- Does the [second](mention) one has an [english website](attribute)
-- Does [DKB](bank) has an [english customer support](attribute)?
-- how much [money](attribute) did I spent on [food](category)?
-- [how much](attribute) did I spent on [food](category)?
-- what [types](attribute) of [account](entity_type) do you offer?
-- In which [city](attribute) is the [second](mention) one located in?
-- what is the [expiry date](attribute) of the [first](mention) one
-- what is the [expiration date](attribute) of the [last](mention) one
-- what is the [category](attribute) of the [second](mention) one
-- how much [money](attribute) did i spend on [food](category)
+- qual o [gender](attribute) de [Hans Maier](person)?
+- qual o [email](attribute) de [Jannik Jung](person)?
+- em qual [city](attribute), [christa schulz](person) mora?
+- em qual [city](attribute) o banco [N26](bank) se localiza?
+- o banco [Wirecard Bank](bank) tem [english website](attribute)?
+- o [first](mention) oferece [free accounts](attribute)?
+- que tipo de [residents](attribute) pode abrir conta no [DKB](bank)?
+- o banco [N26] tem [free worldwide withdrawals](attribute)?
+- onde fica a [headquarter](attribute) do [Deutsche Bank](bank)?
+- o [Deutsche Bank](attribute) tem [english customer service](attribute)?
+- o [KfW](bank) oferece [free worldwide withdrawals](attribute)?
+- qual a [city](attribute) da [second](mention) opção?
+- qual o [gender](attribute) da [last](mention) opção?
+- quanto [money](attribute) eu gastei em [food](category)?
+- [How much](attribute) gastei com  [cloth](category)?
+- quanto [money](attribute) tenho na minha conta?
+- qual é meu [balance](attribute) na minha conta?
+- qual é meu [balance](attribute)
+- quanto [money](attribute) tenho na [account](entity_type)
+- onde é a [headquarter](attribute) da [forth](mention) opção?
+- onde é a [headquarters](attribute) do [Comdirect](bank)?
+- a [second](mention) tem [english website](attribute)
+- o banco [DKB](bank) tem [english customer support](attribute)?
+- quanto [money](attribute) gastei com [food](category)?
+- [how much](attribute) gastei com [food](category)?
+- qual [types](attribute) de [account](entity_type) você oferece?
+- em qual [city](attribute) a [second](mention) opção se encontra?
+- qual é a [expiry date](attribute) da [first](mention) opção?
+- qual é a [expiration date](attribute) da [last](mention) opção?
+- qual é a [category](attribute) da [second](mention) opção?
+- quanto eu [money](attribute) gastei com [food](category)
 - does [N26](bank) have an [english website](attribute)
-- what [residents](attribute) are allowed to open an account on [N26](bank)
-- what about the [headquarters](attribute) of the [last](mention) one
-- what is the [headquarter](attribute) of the [third](mention) one
-- what is the [headquarters](attribute) of the [second](mention) one
-- what about the [third](mention) one
-- what is the [balance](attribute) of the [first](mention) one
-- how much [money](attribute) do i have on my account
-- how much [money](attribute) do i have on the [second](mention) one
+- qual [residents](attribute) pode abrir uma conta no [N26](bank)
+- onde fica a [headquarters](attribute) da [last](mention) opção?
+- qual a [headquarter](attribute) da [third](mention) opção?
+- what is the [headquarters](attribute) da [second](mention) opção?
+- what about the [third](mention) opção?
+- what is the [balance](attribute) of the [first](mention) opção?
+- quanto eu [money](attribute) do i have on my account
+- quanto eu [money](attribute) do i have on the [second](mention) opção?
 - [How much](attribute) do I have in my [savings](account_type) account?
-- How much [money](attribute) is in my [savings](account_type) account?
-- What is my [balance](attribute) for [savings](account_type)?
-- How much [money](attribute) do I have in my [credit](account_type) account?
-- What is my [savings](account_type) account [balance](attribute)?
-- what is the [balance](attribute) of my [credit](account_type) [account](entity_type)
-- what is the [name](attribute) of the [account](entity_type) owner of [DE70334119137743514093](account)
-- what is the [name](attribute) of the [account](entity_type) [DE70334119137743514093](account)
-- what is the [category](attribute) of the [last](mention) [transaction](entity_type)
-- does it has an [english customer service](attribute)?
-- Does it has an [english customer support](attribute)
-- Does [Deutsche Bank](bank) offer [free accounts](attribute)?
-- what about the [last](mention) one
-- What is the [HQ](attribute) of the [third](mention) one
-- what is the [headquarters](attribute) of the [first](mention) one
+- quanto eu [money](attribute) is in my [savings](account_type) account?
+- qual é meu [balance](attribute) da [savings](account_type)?
+- quanto [money](attribute) tenho na minha conta de [credit](account_type)?
+- qual o [balance](attribute) da conta [savings](account_type) 
+- qual o [balance](attribute) of my [credit](account_type) [account](entity_type)
+- qual o [name](attribute) da [account](entity_type) owner of [DE70334119137743514093](account)
+- qual o [name](attribute) da [account](entity_type) [DE70334119137743514093](account)
+- qual o [category](attribute) da [last](mention) [transaction](entity_type)
+- tem um [english customer service](attribute)?
+- existe um  [english customer support](attribute)
+- existe um [Deutsche Bank](bank) que oferece [free accounts](attribute)?
+- o que tem a [last](mention) opção?
+- o que a [last](mention) opção oferece?
+- qual a [HQ](attribute) da [third](mention) opção?
+- qual é o [headquarters](attribute) da [first](mention) opção?
 
 ## intent:query_entities
-- What options for [banks](entity_type) do I have?
-- Show me all [banks](entity_type)
-- List [banks](entity_type)
-- Show me [banks](entity_type)
-- What are my [banks](entity_type) options?
-- List all [banks](entity_type) in [Germany](country)
-- Can you show me all [banks](entity_type) located in [Germany](country)?
-- Can you list all [people](entity_type)?
-- What [accounts](entity_type) do I currently have?
-- Can you list all [accounts](entity_type) for me please?
-- What [transactions](entity_type) can you find for my account [DE89370400440532013000](account)
-- List all my [transactions](entity_type)
-- What [accounts](entity_type) do I own?
-- What are my recent [transactions](entity_type)?
-- List all [transactions](entity_type) on that account
-- Are any of those [transactions](entity_type) [food](category) related
-- what [accounts](entity_type) do i have with that [bank](entity_type)
+- qual são as opções do [banks](entity_type)?
+- me mostre todas os [banks](entity_type)
+- liste todos os [banks](entity_type)
+- liste os [banks](entity_type)
+- quais são as opções dos meus [banks](entity_type)?
+- Liste todos os [banks](entity_type) da [Germany](country)
+- você pode listar todos os [banks](entity_type) localizados na [Germany](country)?
+- você pode listar todos as [people](entity_type)?
+- quais [accounts](entity_type) existem?
+- quais [accounts](entity_type) você tem?
+- por favor, liste todos os [accounts](entity_type)?
+- quais [transactions](entity_type) existem na minha conta [DE89370400440532013000](account)
+- Liste todas as [transactions](entity_type)
+- quais são minhas [accounts](entity_type)?
+- quais são minhas  últimas [transactions](entity_type)?
+- Liste todas as [transactions](entity_type) da minha conta
+- alguma de minhas [transactions](entity_type) estão relacionadas com  [food](category)
+- quais [accounts](entity_type) do i have with that [bank](entity_type)
 - list all [banks](entity_type)
-- what [bank](entity_type) options do i have
-- what are my recent [transactions](entity_type) on that account
-- what [accounts](entity_type) do i have
-- can you list my [accounts](entity_type)
-- can you list my [accounts](entity_type)?
-- what are my [bank](entity_type) options?
-- what are my recent [transactions](entity_type) on that account?
-- what are my recent [transaction](entity_type) on that account?
-- can you list my [accounts](entity_type), please?
-- what [cards](entity_type) do i have?
-- tell me about [accounts](entity_type)
-- I want to know different [banking](entity_type) options
-- what [accounts](entity_type) do I have?
+- quais são as opções do [bank](entity_type)
+- quais são minhas [accounts](entity_type)
+- liste minhas [accounts](entity_type)
+- quais são as opções do [bank](entity_type)?
+- quais [cards](entity_type) eu tenho?
+- me fale sobre [accounts](entity_type)
+- quero saber a diferença entre as opções do [banking](entity_type)
+- quais são os [accounts](entity_type) que eu tenho?
 - tell me about my [accounts](entity_type)
 - what [banks](entity_type) do you have?
 - What [bank](entity_type) options do I have?
@@ -348,9 +269,9 @@
 - what are [transactions](entity_type) I made on [food](category)
 - and what are [transactions](entity_type) from my account [DE76894768662419673111](account)
 - can you only show me [transactions](entity_type) from my account [DE70334119137743514093](account)
-- can you show me some of my recent [transactions](entity_type)
-- what are [banks](entity_type) you can recommend
-- what [banks](entity_type) do you know
+- voc^çe pode listar os últimos [transactions](entity_type)
+- qual [banks](entity_type) você recomenda
+- quais [banks](entity_type) você trabalha
 
 ## intent:resolve_entity
 - [1](mention)
@@ -358,23 +279,22 @@
 - [2](mention)
 - [4](mention)
 - [5](mention)
-- The [first](mention) one
-- The [last](mention) one
-- The [second](mention) one
-- The [third](mention) person
-- I meant the [first](mention) one
-- Take the [last](mention) person
-- I meant [Gerda Schmitz](person)
+- a [first](mention) opção
+- a [last](mention) opção
+- a [second](mention) opção
+- seleciono a [first](mention) opção
+- seleciono a [second](mention) opção
+- escolho a [first](mention) opção
+- escolho a [last](mention) pessoa
+- a [third](mention) pessoa
+- escolho  [Gerda Schmitz](person)
 - [Bertha Wagner](person)
 - [dennis bauer](person)
-- The [first](mention) [nicole](person)
-- Take the [first](mention) one
-- Take the [second](mention) one
+- a [first](mention) [nicole](person)
 - [N26](bank)
-- take the [first](mention) [bank](entity_type)
-- I select the [first](mention) [bank](entity_type)
-- The [latter](mention)
-- take the [second](mention) one
+- seleciono o [first](mention) [bank](entity_type)
+- eu seleciono a [first](mention) [bank](entity_type)
+- a [latter](mention)
 
 ## regex:account
 - DE[0-9]{20}
