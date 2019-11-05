@@ -178,7 +178,7 @@ class ActionQueryEntities(Action):
 
         if not entities:
             dispatcher.utter_template(
-                "I could not find any entities for '{}'.".format(entity_type), tracker
+                "Não achei uma entidade para '{}'.".format(entity_type), tracker
             )
             return []
 
@@ -187,7 +187,7 @@ class ActionQueryEntities(Action):
         entity_representation = schema[entity_type]["representation"]
 
         dispatcher.utter_message(
-            "Found the following '{}' entities:".format(entity_type)
+            "Achei uma seguinte entidade '{}' entities:".format(entity_type)
         )
         for i, e in enumerate(entities):
             representation_string = to_str(e, entity_representation)
@@ -267,11 +267,13 @@ class ActionQueryAttribute(Action):
         # utter response
         if value is not None and len(value) == 1:
             dispatcher.utter_message(
-                f"{name} has the value '{value[0]}' for attribute '{attribute}'."
+               # f"{name} has the value '{value[0]}' for attribute '{attribute}'."
+               f"{name} tem valor '{value[0]}' para o atributo '{attribute}'."
             )
         else:
             dispatcher.utter_message(
-                f"Did not found a valid value for attribute {attribute} for entity '{name}'."
+                #f"Did not found a valid value for attribute {attribute} for entity '{name}'."
+                f"Não foi encontado um valor válido para o atributo {attribute} da entidade '{name}'."
             )
 
         slots = [SlotSet("mention", None), SlotSet(entity_type, name)]
@@ -310,7 +312,8 @@ class ActionCompareEntities(Action):
 
             if value is not None and len(value) == 1:
                 dispatcher.utter_message(
-                    f"{e} has the value '{value[0]}' for attribute '{attribute}'."
+                    # f"{e} has the value '{value[0]}' for attribute '{attribute}'."
+                    f"{e} tem valor '{value[0]}' para o atributo '{attribute}'."
                 )
 
         return []
