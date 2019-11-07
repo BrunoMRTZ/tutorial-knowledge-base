@@ -47,3 +47,8 @@ nrw.bank
 Wirecard Bank
 Consorsbank
 landesbank hessen-thüringen
+Banco do Brasil
+Bradesco
+Santander
+Caixa
+Itaú
