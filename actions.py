@@ -187,7 +187,7 @@ class ActionQueryEntities(Action):
         entity_representation = schema[entity_type]["representation"]
 
         dispatcher.utter_message(
-            "Achei uma seguinte entidade '{}' entities:".format(entity_type)
+            "Achei a entidade '{}' entities:".format(entity_type)
         )
         for i, e in enumerate(entities):
             representation_string = to_str(e, entity_representation)
