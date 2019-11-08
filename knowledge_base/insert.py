@@ -11,7 +11,9 @@ def insert(graql_insert_query):
 
 if __name__ == "__main__":
     graql_insert_query = """
-    insert $b isa bank, has name 'KfW', has country 'Germany', has headquarters 'Frankfurt am Main';
+    #insert $b isa bank, has name 'KfW', has country 'Germany', has headquarters 'Frankfurt am Main';
+    insert $b isa entity_type_mapping, has mapping-key 'bancos', has mapping-value 'bank';
+    
     """
 
     insert(graql_insert_query)
