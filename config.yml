@@ -1,4 +1,4 @@
-language: en
+language: pt
 pipeline: supervised_embeddings
 
 policies:
