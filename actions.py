@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from typing import Text, Dict, Any, List, Union
-
+import pycep_correios
 from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
 
@@ -348,3 +348,13 @@ class ActionResolveEntity(Action):
 
         dispatcher.utter_template("utter_rephrase", tracker)
         return [SlotSet(entity_type, None), SlotSet("mention", None)]
+    
+class ActionBuscaCep(Action):
+   def name(self) -> Text:
+       return "action_busca_cep"
+   
+    def run(self, dispatcher, tracker, domain):
+       cep = tracker.get_slot('cep_number')
+       endereco = pycep_correios.consultar_cep(cep)
+      dipatcher.utter_message(endereco)
+      return []
