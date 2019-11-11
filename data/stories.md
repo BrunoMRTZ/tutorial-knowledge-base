@@ -1,3 +1,8 @@
+## busca cep
+* busca_cep
+  - action_query_entities
+  - slot{"cep": "70000900"}
+
 ## greet
 * greet
   - utter_greet
