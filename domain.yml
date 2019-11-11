@@ -1,6 +1,7 @@
 intents:
 - affirm
 - bye
+- busca_cep
 - compare_entities
 - deny
 - greet
@@ -18,6 +19,7 @@ entities:
 - bank
 - card
 - category
+- cep
 - country
 - date
 - email
@@ -31,6 +33,8 @@ entities:
 - transaction
 - correiosaz
 slots:
+  cep_number:
+    type: text
   correiosaz:
     type: text
   account:
@@ -120,6 +124,7 @@ templates:
   - text: Consigo enviar alguns fatos sobre diferentes bancos. Posso responder sobre algumas questionamentos da suas contas correntes.
        Posso listar as suas últimas transações.
 actions:
+- action_busca_cep
 - action_compare_entities
 - action_query_attribute
 - action_query_entities
