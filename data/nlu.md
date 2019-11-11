@@ -1,3 +1,8 @@
+## intent:busca_cep
+- pesquisar cep
+- buscar cep 
+- informações do cep
+
 ## intent:affirm
 - sim
 - claro
@@ -5,7 +10,7 @@
 - é isso mesmo
 - ok
 - massa
-- vai enfrente
+- vai em frente
 - entendido
 - fantástico
 - aceito
@@ -20,6 +25,7 @@
 - entendi
 - confirmado
 - perfeito
+- beleza
 
 ## intent:bye
 - tchau
