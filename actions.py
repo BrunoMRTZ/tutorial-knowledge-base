@@ -358,8 +358,11 @@ class ActionBuscaCep(Action):
         cep = tracker.get_slot("mention")
         print(cep)
         endereco = pycep_correios.consultar_cep(cep)
-       
-        dispatcher.utter_message("Endereço encontrado {}".format(endereco))
+        dispatcher.utter_message("Endereço encontrado {}".format(cep))
+        dispatcher.utter_message("Logradouro :{}".format(endereco['end']))
+        dispatcher.utter_message("Bairro.... :{}".format(endereco['bairro']))
+        dispatcher.utter_message("Cidade.... :{}".format(endereco['cidade']))
+        dispatcher.utter_message("Complemento:{}".format(endereco['complemento2']))
         print(endereco)
     
         return [SlotSet("cep", cep)]
