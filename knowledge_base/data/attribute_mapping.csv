@@ -43,6 +43,7 @@ execution date,execution-date
 data da transação,execution-date
 data da despesa,execution-date
 data do débito,execution-date
+data do depósito,execution-date
 data do crédito,execution-date
 amount,amount
 valor,amount
