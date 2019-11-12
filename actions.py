@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from typing import Text, Dict, Any, List, Union
 import pycep_correios
+from pycep_correios.excecoes import ExcecaoPyCEPCorreios
 from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
 
@@ -356,13 +357,19 @@ class ActionBuscaCep(Action):
     def run(self, dispatcher, tracker, domain):
        
         cep = tracker.get_slot("mention")
-        print(cep)
-        endereco = pycep_correios.consultar_cep(cep)
-        dispatcher.utter_message("Endereço encontrado {}".format(cep))
-        dispatcher.utter_message("Logradouro :{}".format(endereco['end']))
-        dispatcher.utter_message("Bairro.... :{}".format(endereco['bairro']))
-        dispatcher.utter_message("Cidade.... :{}".format(endereco['cidade']))
-        dispatcher.utter_message("Complemento:{}".format(endereco['complemento2']))
-        print(endereco)
+        
+        try:
+            print(cep)
+            endereco = pycep_correios.consultar_cep(cep)
+            dispatcher.utter_message("Endereço encontrado {}".format(cep))
+            dispatcher.utter_message("Logradouro :{}".format(endereco['end']))
+            dispatcher.utter_message("Bairro.... :{}".format(endereco['bairro']))
+            dispatcher.utter_message("Cidade.... :{}".format(endereco['cidade']))
+            dispatcher.utter_message("Complemento:{}".format(endereco['complemento2']))
+            print(endereco)
+            
+        except ExcecaoPyCEPCorreios as exc:
+             dispatcher.utter_message("CEP não encontrado  {}".format(cep))
+    
     
         return [SlotSet("cep", cep)]
