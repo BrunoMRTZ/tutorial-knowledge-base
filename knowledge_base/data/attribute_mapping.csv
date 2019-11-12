@@ -1,47 +1,105 @@
 mapping-key,mapping-value
 city,headquarters
+cidade,headquarters
+cidades,headquarters
+matriz,headquarters
 headquarter,headquarters
 headquarters,headquarters
+sede,headquarters
 HQ,headquarters
 main office,headquarters
 email,email
+e-mail,email
 gender,gender
+gênero,gender
 How much money,balance
-how much,balance
+quanto dinheiro,balance
+saldo,balance
+extrato,balance
+dinheiro,balance
 money,balance
 cash,balance
 english website,english-website
+site em inglês,english-website
 english mobile app,english-mobile-app
+app mobile,english-mobile-app
+app,english-mobile-app
+app para celular,english-mobile-app
 residents,allowed-residents
+residentes,allowed-residents
 free accounts,free-accounts
+conta gratuita,free-accounts
+conta free,free-accounts
 free worldwide withdrawals,free-worldwide-withdrawals
+saque internacional gratuito,free-worldwide-withdrawals
+saque no estrangeiro gratuito,free-worldwide-withdrawals
 english customer service,english-customer-service
 english customer support,english-customer-service
+serviço ao cliente em português,english-customer-service
+suporte ao cliente em português,english-customer-service
 category,category
+categoria,category
 execution date,execution-date
+data da transação,execution-date
+data da despesa,execution-date
+data do débito,execution-date
+data do crédito,execution-date
 amount,amount
+valor,amount
 reference,reference
+referência,reference
 signed,sign-date
+assinado,sign-date
+data da assinatura,sign-date
 balance,balance
+saldo,balance
 account type,account-type
+tipo de conta,account-type
 opened,opening-date
+data da abertura,opening-date
+aberta,opening-date
 account-number,account-number
-account number,account-number
+número da conta,account-number
+número da conta corrente,account-number
+número da poupança,account-number
+número da conta de poupança,account-number
+conta,account-number
+cc,account-number
 name,name
+nome,name
 country,country
+país,country
 email,email
 e mail,email
 e-mail,email
-last name,last-name
+sobrenome,last-name
 first name,first-name
+nome próprio,first-name
+primeiro nome,first-name
 gender,gender
+gênero,gender
 phone-number,phone-number
 phone number,phone-number
-female,gender
-male,gender
+telefone,phone-number
+celular,phone-number
+número do telefone,phone-number
+número do celular,phone-number
+feminino,gender
+masculino,gender
 name on card,name-on-card
+nome no cartão,name-on-card
+nome impresso no cartão,name-on-card
 expiry date,expiry date
 expiration,expiry date
+data de vencimento,expiry date
+expiry date,expiry date
+vencimento do cartão,expiry date
+data de validade,expiry date
 created,created-date
+data da emissão,created-date
+data da emissão do cartão,created-date
+emissão,created-date
 card number,card-number
 card-number,card-number
+número do cartão,card-number
+número do cartão de crédito,card-number
