@@ -43,7 +43,7 @@ class GraphDatabase(KnowledgeBase):
     def __init__(self, uri: Text = "localhost:48555", keyspace: Text = "banking"):
         self.uri = uri
         self.keyspace = keyspace
-        self.me = "mitchell.gillis@t-online.de"
+        self.me = "brunojjmartinez@gmail.com"
 
     def _thing_to_dict(self, thing):
         """
