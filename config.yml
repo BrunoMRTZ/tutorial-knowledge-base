@@ -1,6 +1,5 @@
 language: pt
 pipeline: supervised_embeddings
-
 policies:
 - batch_size: 50
   epochs: 200
