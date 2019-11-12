@@ -350,11 +350,11 @@ class ActionResolveEntity(Action):
         return [SlotSet(entity_type, None), SlotSet("mention", None)]
     
 class ActionBuscaCep(Action):
-   def name(self) -> Text:
-       return "action_busca_cep"
+    def name(self) -> Text:
+        return "action_busca_cep"
    
     def run(self, dispatcher, tracker, domain):
-       cep = tracker.get_slot('mention')
-       endereco = pycep_correios.consultar_cep(cep)
-      dipatcher.utter_message(endereco)
-      return []
+        cep = tracker.get_slot('mention')
+        endereco = pycep_correios.consultar_cep(cep)
+        dipatcher.utter_message(endereco)
+        return []
