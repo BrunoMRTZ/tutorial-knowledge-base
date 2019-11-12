@@ -354,7 +354,7 @@ class ActionBuscaCep(Action):
         return "action_busca_cep"
    
     def run(self, dispatcher, tracker, domain):
-         print(mention)
+        print(mention)
         cep = tracker.get_slot("mention")
         print(cep)
         endereco = pycep_correios.consultar_cep(cep)
