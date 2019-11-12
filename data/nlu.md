@@ -1,6 +1,8 @@
 ## intent:busca_cep
-- pesquisar cep
+- pesquisar o cep
 - buscar cep 
+- busca cep 
+- pesquisar endereço pelo cep
 - informações do cep
 
 ## intent:affirm
