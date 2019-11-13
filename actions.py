@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from typing import Text, Dict, Any, List, Union
+
 import pycep_correios
 from pycep_correios.excecoes import ExcecaoPyCEPCorreios
+
 from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
 
@@ -359,7 +361,7 @@ class ActionBuscaCep(Action):
         cep = tracker.get_slot("mention")
         try:
             cep = formatar_cep(cep)
-            print('O CEP %s esta formatado: %s' % (meu_cep, cep_formatado))
+            print('O CEP %s esta formatado: %s' % (meu_cep, cep))
         except ValueError as exc:
             print('Erro ao formatar CEP: %s' % exc)
         
