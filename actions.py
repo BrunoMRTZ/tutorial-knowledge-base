@@ -359,10 +359,10 @@ class ActionBuscaCep(Action):
    
     def run(self, dispatcher, tracker, domain):
        
-        cep = tracker.get_slot("mention")
+        cep_mention = tracker.get_slot("mention")
         try:
-            cep = formatar_cep(cep)
-            print('O CEP %s esta formatado: %s' % (meu_cep, cep))
+            cep = formatar_cep(cep_mention)
+            print('O CEP %s esta formatado: %s' % (cep_mention, cep))
         except ValueError as exc:
             print('Erro ao formatar CEP: %s' % exc)
         
