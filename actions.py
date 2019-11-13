@@ -3,6 +3,7 @@ from typing import Text, Dict, Any, List, Union
 
 import pycep_correios
 from pycep_correios.excecoes import ExcecaoPyCEPCorreios
+from pycep_correios import formatar_cep
 
 from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
