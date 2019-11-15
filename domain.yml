@@ -108,6 +108,7 @@ slots:
 templates:
   utter_greet:
   - text: Olá. Posso fornecer informações sobre os Correios, bancos ou detalhes sobre as contas correntes que você possui. Quais informações você deseja?
+    image: "http://104.209.210.48:8080/botat/images/balcaodigital.png"
   utter_goodbye:
   - text: Até a próxima!👋
   - text: Tchau, até logo.👋
