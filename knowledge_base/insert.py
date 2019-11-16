@@ -1,6 +1,5 @@
 from grakn.client import GraknClient
 
-
 def insert(graql_insert_query):
     with GraknClient(uri="localhost:48555") as client:
         with client.session(keyspace="banking") as session:

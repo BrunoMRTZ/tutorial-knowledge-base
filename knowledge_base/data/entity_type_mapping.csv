@@ -2,29 +2,30 @@ mapping-key,mapping-value
 people,person
 persons,person
 person,person
-banks,bank
-bank,bank
-banking,bank
-banking options,bank
-transactions,transaction
-transaction,transaction
-accounts,account
-account,account
-card,card
-cards,card
-cartões,cards
-cartões de crédito,cards
-bancos,bank
-banco,bank
-conta,account
-contas,account
-transação,transaction
-transações,transaction
-lançamentos,transaction
-lançamento,transaction
-extrato,transaction
 pessoa,person
 pessoas,person
 atendente,person
 funcionário,person
 gerente,person
+banks,bank
+bank,bank
+banking,bank
+banking options,bank
+bancos,bank
+banco,bank
+accounts,account
+account,account
+conta,account
+contas,account
+card,card
+cards,card
+cartões,card
+cartões de crédito,card
+transação,transaction
+transações,transaction
+lançamentos,transaction
+lançamento,transaction
+extrato,transaction
+transactions,transaction
+transaction,transaction
+
