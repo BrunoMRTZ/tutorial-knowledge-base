@@ -11,6 +11,10 @@ intents:
 - query_entities
 - resolve_entity
 - pesquisa_correiosaz
+- mandar_email
+- patrocinadores
+- patrocinador_intel
+- governo_digital
 entities:
 - account
 - account_type
@@ -33,10 +37,6 @@ entities:
 - transaction
 - correiosaz
 slots:
-  cep_number:
-    type: text
-  correiosaz:
-    type: text
   account:
     type: text
   account_number:
@@ -58,6 +58,12 @@ slots:
   card_number:
     type: text
   category:
+    type: text
+  cep:
+    type: unfeaturized
+  cep_number:
+    type: text
+  correiosaz:
     type: text
   country:
     type: text
@@ -107,8 +113,9 @@ slots:
     type: text
 templates:
   utter_greet:
-  - text: Olá. Posso fornecer informações sobre os Correios, bancos ou detalhes sobre as contas correntes que você possui. Quais informações você deseja?
-    image: "http://104.209.210.48:8080/botat/images/balcaodigital2.png"
+  - text: Olá. Posso fornecer informações sobre os Correios, bancos ou detalhes sobre
+      as contas correntes que você possui. Quais informações você deseja?
+    image: http://104.209.210.48:8080/botat/images/balcaodigital2.png
   utter_goodbye:
   - text: Até a próxima!👋
   - text: Tchau, até logo.👋
@@ -122,8 +129,22 @@ templates:
   - text: Desculpe, Não consigo responder sobre este assunto.😢
   - text: Não consigo te ajudar neste assunto?.😢
   utter_help:
-  - text: Consigo enviar alguns fatos sobre diferentes bancos. Posso responder sobre algumas questionamentos da suas contas correntes.
-       Posso listar as suas últimas transações.
+  - text: Consigo enviar alguns fatos sobre diferentes bancos. Posso responder sobre
+      algumas questionamentos da suas contas correntes. Posso listar as suas últimas
+      transações.
+  utter_Digite_cep:
+  - text: Digite o CEP.
+  utter_cep_digite:
+  - text: Qual é o CEP?
+  utter_correiosaz_digite:
+  - text: Entre com o produto ou serviço para consulta.
+  utter_email_caciabot:
+  - text: clique no link [caciabot@gmail.com](mailto:caciabot@gmail.com)
+  utter_patrocinadores:
+  - text: Sou patrocinada pela INTEL que forneceu os servidores e a Microsoft pela
+      nuvem.
+  utter_patrocinador_intel:
+  - text: 'A Intel nós deu a maior contribuição, os servidores que rodam o meu cérebro. '
 actions:
 - action_busca_cep
 - action_compare_entities
@@ -137,3 +158,10 @@ actions:
 - utter_ok
 - utter_out_of_scope
 - utter_rephrase
+- utter_Digite_cep
+- utter_cep_digite
+- Action_correiosAZ
+- utter_correiosaz_digite
+- utter_email_caciabot
+- utter_patrocinadores
+- utter_patrocinador_intel
