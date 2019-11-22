@@ -10,7 +10,7 @@ from rasa_sdk import Action, Tracker
 
 from schema import schema
 from graph_database import GraphDatabase
-
+from grakn.client import GraknClient
 
 def resolve_mention(tracker: Tracker) -> Text:
     """
@@ -191,7 +191,7 @@ class ActionQueryEntities(Action):
         entity_representation = schema[entity_type]["representation"]
 
         dispatcher.utter_message(
-            "Achei a entidade '{}' entities:".format(entity_type)
+            "Achei a entidade '{}':".format(entity_type)
         )
         for i, e in enumerate(entities):
             representation_string = to_str(e, entity_representation)
@@ -381,3 +381,41 @@ class ActionBuscaCep(Action):
     
     
         return [SlotSet("cep", cep)]
+    
+class CorreiosAZ(Action):
+    def name(self) -> Text:
+        return "Action_correiosAZ"
+   
+    def run(self, dispatcher, tracker, domain):
+       
+        entidade = tracker.get_slot("correiosaz")
+        print('entidade',entidade)
+        entidade = entidade.lower()
+        with GraknClient(uri="localhost:48555") as client:
+            with client.session(keyspace="base_conhecimento") as session:
+        
+                ## Read the person using a READ only transaction
+                with session.transaction().read() as transaction:
+                    query = [
+                        'match $base isa base,',
+                        '  has pergunta $pergunta,',
+                        '  has servico  "', entidade, '" ;',
+                        '  get $pergunta; limit 10;'
+                    ]
+                    print("\nQuery:\n", "\n".join(query))
+                    query = "".join(query)
+
+                    iterator = transaction.query(query)
+                    answers = iterator.collect_concepts()
+                    result = [ answer.value() for answer in answers ]
+                
+                    dispatcher.utter_message("Escolha uma opção relacionada a {}".format( entidade))
+                
+                    for answer in answers:
+                        print("\nResult:\n", answer.value())
+                        dispatcher.utter_message("Entidade enconrada {}".format( answer.value()))
+                
+                
+      
+    
+        return [SlotSet("entidade", entidade)]
