@@ -1,10 +1,3 @@
-## intent:busca_cep
-- pesquisar o cep
-- buscar cep 
-- busca cep 
-- pesquisar endereço pelo cep
-- informações do cep
-
 ## intent:affirm
 - sim
 - claro
@@ -29,6 +22,23 @@
 - perfeito
 - beleza
 
+## intent:busca_cep
+- pesquisar o cep
+- buscar cep
+- busca cep
+- pesquisar endereço pelo cep
+- informações do cep
+- busa cep
+- Busca cep
+- bsuca cep
+- informações  sobre o cep
+- cep
+- pesquisar cep
+- buscar o cep
+- informações sobre os correios
+- busca  cep
+- Buscar CEP
+
 ## intent:bye
 - tchau
 - até logo
@@ -48,18 +58,22 @@
 - qual é meu [balance](attribute)?
 - liste o [balance](attribute) desta conta?
 - mostre o [balance](attribute) da conta?
-
+- que [contas](account) tem mais [cash](attribute)
+- que [contas](account) tem mais [saldo](attribute)
 
 ## intent:deny
 - não
 - definitavemente não
-- nunca 
+- nunca
 - nem pensar
 - aho que não
 - não tenho certeza
 - não senhora
 - não, obrigado
 - negativo
+
+## intent:governo_digital
+- O que é governo digital
 
 ## intent:greet
 - Olá
@@ -69,6 +83,8 @@
 - vamos conversar
 - help
 - oi
+- Ola
+- ola
 
 ## intent:help
 - Preciso de ajuda
@@ -79,6 +95,13 @@
 - help
 - me de um help
 - não sei o que eu quero
+
+## intent:mandar_email
+- Mandar e-mail para você
+- enviar email
+- mandar email
+- mandar um email  para voce
+- mandar email para você
 
 ## intent:out_of_scope
 - posso transferir dinheiro?
@@ -93,6 +116,25 @@
 - você pode me informar o [owner](attribute) da [account](entity_type) [DE76894768662419673111](account)
 - tenho uma conta no [N26](bank)
 - quais são as [transactions](entity_type) que realizei na conta [DE51728838437501118370](account)
+- abrir conta
+
+## intent:patrocinador_intel
+- Qual a participação da Intel
+
+## intent:patrocinadores
+- quem são os patrocinadores
+
+## intent:pesquisa_correiosaz
+- informações sobre aerograma
+- informar sobre o [aerograma-social](correiosaz)
+- informar sobre o [Aerograma-Social](correiosaz)
+- informar sobre aerograma-social
+- informar sobre o [aerograma](correiosaz)
+- [aerograma social](correiosaz)
+- informar sobre [aerograma social](correiosaz)
+- informar sobre o [aerograma social](correiosaz)
+- informar sobre empréstimos
+- informações sobre [emprestimo](correiosaz)
 
 ## intent:query_attribute
 - qual o [gender](attribute) de [Hans Maier](person)?
@@ -139,7 +181,7 @@
 - quanto eu [money](attribute) is in my [savings](account_type) account?
 - qual é meu [balance](attribute) da [savings](account_type)?
 - quanto [money](attribute) tenho na minha conta de [credit](account_type)?
-- qual o [balance](attribute) da conta [savings](account_type) 
+- qual o [balance](attribute) da conta [savings](account_type)
 - qual o [balance](attribute) of my [credit](account_type) [account](entity_type)
 - qual o [name](attribute) da [account](entity_type) owner of [DE70334119137743514093](account)
 - qual o [name](attribute) da [account](entity_type) [DE70334119137743514093](account)
@@ -151,6 +193,10 @@
 - o que a [last](mention) opção oferece?
 - qual a [HQ](attribute) da [third](mention) opção?
 - qual é o [headquarters](attribute) da [first](mention) opção?
+- listar saldo da minha conta
+- listar meus [banks](entity_type)
+- listar cartões
+- qual é meu [saldo](attribute)
 
 ## intent:query_entities
 - você pode listar todos as [people](entity_type)?
@@ -194,6 +240,41 @@
 - [how much](attribute) gastei em [food](category)
 - quais [cards](entity_type) eu tenho?
 - voçê pode listar meus [cards](entity_type)
+- liste meus [cards](entity_type)
+- listar meus [cards](entity_type)
+- listar minhas [transactions](entity_type)
+- listar [transactions](entity_type)
+- liste meus lançamentos
+- liste meus cartões de crédito
+- liste meus cartões
+- liste minhas [contas](account)
+- liste [banks](entity_type)
+- liste minha [contas](account)
+- liste meus [bancos](bank)
+- listar meus [accounts](entity_type)
+- listar [bancos](bank)
+- listar [banks](entity_type)[banks](attribute)
+- listar minhas [contas](account)[contas](entity_type)
+- listar meus [bancos](bank)[bancos](entity_type)
+- listar meus [cartões](entity_type)
+- listar [saldo](attribute)
+- listar [saldo](attribute) da conta do [bradesco](bank)
+- informações sobre aerograma-social
+- listar  [bancos](bank)
+- lista [bancos](bank)
+- liste meus [balance](attribute)
+- listar [pessoas](person)
+- liste [contas](account)
+- liste [saldos](attribute)
+- list o [saldo](attribute) das minhas [contas](account)
+- listar minhas [contas](account)
+- listar [balance](attribute)
+- listar [cards](entity_type)
+- listar [banks](entity_type)
+- listar meus [bancos](bank)[bancos](entity_type)
+- listar meu saldo
+- listar meus [bancos](bank)
+- listar meus [saldos](attribute)
 
 ## intent:resolve_entity
 - [1](mention)
@@ -217,12 +298,21 @@
 - seleciono o [first](mention) [bank](entity_type)
 - eu seleciono a [first](mention) [bank](entity_type)
 - a [latter](mention)
+- 70.350.751
+- 70.350-751
+- [70000980](mention)
+- [70350751](mention)
+- [70000900](mention)
+- 70350-751
 
-## regex:account
-- DE[0-9]{20}
-
-## lookup:bank
+## lookup:bank.txt
   data/lookup_tables/bank.txt
 
-## lookup:person
+## lookup:person.txt
+  data/lookup_tables/person.txt
+
+## lookup:bank.txt
+  data/lookup_tables/bank.txt
+
+## lookup:person.txt
   data/lookup_tables/person.txt
